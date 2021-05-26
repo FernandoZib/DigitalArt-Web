@@ -203,41 +203,10 @@ h1,h2,h3{
 }
 
 
-.nombres0{
-    text-shadow: 2px 2px 5px pink;
 
-}
+#nombres1, #nombres2, #nombres3, .nombres0{text-align: center; font-size: 25px; color: #DFE9F3;}
 
-#nombres1{
-    text-shadow: 2px 2px 5px green;
-}
-
-#nombres2{
-    text-shadow: 2px 2px 5px yellow;
-
-}
-
-#nombres3{
-    text-shadow: 2px 2px 5px orange;
-
-}
-
-#nombres1, #nombres2, #nombres3, .nombres0{text-align: center; font-size: 25px;}
-
-
-.images1{
-    width: 200px;
-    height: 250px;
-    margin-left: 42%;
-    border-radius: 50%;
-    align-items: center;
-    transition: transform .2s;   
-    border-style: double;
-    background-color: lightblue;
-
-}
-
-.forma:hover, .images:hover, .servicio:hover {
+.forma:hover, .images:hover, .servicio:hover, .images1:hover {
     transform: scale(1.1);
     background-color: lightblue;
 
@@ -260,7 +229,7 @@ h1,h2,h3{
 
 
  @media (max-width: 700px){
-     .images,{              
+     .images{              
         flex-direction: row;
         display: block;
         margin-left: auto;
@@ -448,7 +417,7 @@ body{
 
 }
 
-
+/*Para el pie de pagina*/
 .sub{
     margin: 1rem;
     padding: 1rem;
@@ -467,6 +436,12 @@ body{
     position: relative;
 
 }
+.pie{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+
+}
 #box{
     width: 50px;
     height: 50px;
@@ -476,9 +451,35 @@ body{
 #contan a{
     margin: 2rem;
 }
-.pie{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-items: center;
+/*Para nosotros*/
+.fotoinfo{
+    float:left;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius:3%
 
 }
+#foto{
+    width: 300px;
+    height: 300px;
+    margin-right: 1rem;
+    background-color:#0097A7
+    
+}
+#info{
+    background-color: #757575;
+    width: 98rem;
+    height: 30rem;
+}
+.images1{
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    align-items: center;
+    transition: transform .2s;  
+    border-radius: 5%; 
+    background-color: lightblue;
+
+}
+
