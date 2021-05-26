@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gañería</title>
+  <link rel="preload" href="css/normalizebryan.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link href="css/styles.css" rel="stylesheet">
+	<title>Galeria</title>
+	<script type="text/javascript" src="js/galeria.js"></script>
+</head>
+
+
+<body>
+  <head>
+    <h1 class="titulo">Galería<span></span> </h1>  
+  </head>
+	<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <a href=index.html>Inicio</a>
+      <a href=nosotros.html>Sobre nosotros</a>
+      <a href=galeria.html>Galería</a>
+      <a href=paquetes.html>Paquetes</a>
+      <a href=contacto.html>Contacto</a>
+    </nav>
+  </div>
+  <p id="eventos"></p>
+  <br>
+	<form name="f1" class="forma"> 		
+		<img src="img/DigitalArt.jpg" width="400" height="440" onmouseover="eventos()" id="foto">
+		<input type="button" value="Anterior" onmouseover="eventos()" onclick="atras()">
+		<input type="button" value="Siguiente" onmouseover="eventos()" onclick="adelante()">
+	</form>
+
+
+</body>
+</html>
