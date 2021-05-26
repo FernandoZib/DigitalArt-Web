@@ -249,6 +249,34 @@ h1,h2,h3{
 }
 
 /*Para contacto*/
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
+body{
+    font-size: 16px;/*1 rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--blaco) 100%);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.conter{
+    width: 25%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0 1px 10px rgba(0,0,0,.5);
+    position: relative;
+    left: 450px;
+    top: 50px;
+
+}
 .ar{
     display: flex;
     width: 100%;
@@ -375,28 +403,29 @@ h1,h2,h3{
 .area .form:focus {
     border: 1px solid var(--secunadrio);
 }
-
-body{
-    font-size: 16px;/*1 rem = 10px */
-    font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, #DFE9F3 0%, #DFE9F3 100%);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+.area textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-family: "Roboto Thin";
+    font-weight: 400;
+    outline: 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+.area #fecha{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-family: "Roboto Thin";
 }
 
-.conter{
-    width: 25%;
-    max-width: 1000px;
-    background: #fff;
-    padding: 40px;
-    margin: 20px auto;
-    box-shadow: 0 1px 10px rgba(0,0,0,.5);
-    position: relative;
-    left: 450px;
-    top: 50px;
-
-}
 
 /*Para el pie de pagina*/
 .sub{
