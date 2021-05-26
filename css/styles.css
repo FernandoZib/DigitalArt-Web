@@ -308,6 +308,32 @@ h1,h2,h3{
 }
 
 /*Estilo Contacto*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media(min-width: 768px){
+    .conter{
+        width: auto;
+    } 
+}
+@media (max-width: 768px){
+	.area{
+    	padding-top: 5px;
+    	padding-left: 30px;
+    	display: inline-block;
+    	margin-right: auto;    	
+    	margin-left: auto;
+    	background-color: lightpink;
+    	transition: transform .2s;
+    	border-radius: 5%;
+    	margin-bottom: 30px;
+    }
+}
 .alert{
     display: block;
     padding: 12px 20px;
@@ -454,7 +480,7 @@ h1,h2,h3{
     .area .form:focus {
         border: 1px solid var(--secunadrio);
     }
-    
+
     .area textarea{
         width: 100%;
         margin-bottom: 15px;
