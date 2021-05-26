@@ -5,7 +5,7 @@ function adelante() {
 	if(num>8)
 		num=1;
 	var foto=document.getElementById("foto");
-	foto.src="img/foto"+num+".jpg"
+	foto.src="img/foto"+num+".webp"
 }
 
 function atras(){
@@ -13,7 +13,7 @@ function atras(){
 	if (num<1)
 		num=8;
 	var foto=document.getElementById("foto");
-	foto.src="img/foto"+num+".jpg"
+	foto.src="img/foto"+num+".webp"
 }
 
 function eventos(){
