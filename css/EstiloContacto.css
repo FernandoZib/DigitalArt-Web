@@ -1,3 +1,6 @@
+:root{
+    --secunadrio: #0097A7;
+}
 /*Para contacto*/
 @media(min-width: 768px){
     .conter{
@@ -58,6 +61,13 @@
         background-color:var(--secunadrio);
     
     }
+    @media (min-width: 768px){
+        .navegacion-principal{
+           flex-direction: row;
+           justify-content:space-between;
+        }
+         
+    }
     .navegacion-principal{
         display: flex;
         flex-direction: column;
@@ -81,8 +91,8 @@
     
     }
     .navegacion-principal a:hover{
-        background-color: var(--primario);
-        color: var(--oscuro);
+        background-color:#FFC107;
+        color:#000;
     }
     .alert{
         display: block;
