@@ -249,6 +249,24 @@ h1,h2,h3{
 }
 
 /*Para contacto*/
+@media(min-width: 768px){
+    .conter{
+        width: auto;
+    } 
+}
+@media (max-width: 700px){
+	.area{
+    	padding-top: 5px;
+    	padding-left: 30px;
+    	display: inline-block;
+    	margin-right: auto;    	
+    	margin-left: auto;
+    	background-color: lightpink;
+    	transition: transform .2s;
+    	border-radius: 5%;
+    	margin-bottom: 30px;
+
+    }
 .alert{
     display: block;
     padding: 12px 20px;
