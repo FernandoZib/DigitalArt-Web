@@ -12,9 +12,10 @@ html{
 body{
     font-size: 16px;/*1 rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, #DFE9F3 10%, #DFE9F3 100%);/*El porcentaje indica
-                                                                                 en que altura hace el cambio
-                                                                                 de color*/
+    background-image: linear-gradient(to top, #DFE9F3 10%, #DFE9F3 100%);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .contenedor{
     max-width: 120rem;
@@ -307,6 +308,14 @@ h1,h2,h3{
 }
 
 /*Estilo Contacto*/
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
 .conter{
         width: 25%;
         max-width: 1000px;
@@ -444,14 +453,6 @@ h1,h2,h3{
     .area .form input[type="text"]:focus,
     .area .form:focus {
         border: 1px solid var(--secunadrio);
-    }
-    
-    .warnings{
-        width: 200px;
-        text-align: center;
-        margin: auto;
-        color: #b06ab3;
-        padding-top: 20px;
     }
     
     .area textarea{
