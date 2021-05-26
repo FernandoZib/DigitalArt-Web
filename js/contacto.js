@@ -2,7 +2,6 @@
 function ValidarFormulario(){
     //Removemos el div con la clase alert
     $('.alert').remove();
-
     //Declaración de Variables
     var nombre=$('#nombre').val(),
         apellidos=$('#apellidos').val(),
@@ -11,7 +10,6 @@ function ValidarFormulario(){
         correo=$('#correo').val(),
         mensaje=$('#mensaje').val(),
         fecha=$('#fecha').val();
-
     //Validamos el campo Nombre
     if (nombre=="" || nombre==null){
         CambiarColor("nombre");
@@ -42,7 +40,6 @@ function ValidarFormulario(){
             return false;
         }
     }
-
     //Validar el télefono
     if (telefono=="" || telefono==null){
         CambiarColor("telefono");
@@ -50,7 +47,6 @@ function ValidarFormulario(){
         MostrarAlerta("Campo Teléfono Obligatorio")
         return false;
     }
-
     //Validar la Dirección
     if (direccion=="" || direccion==null){
         CambiarColor("direccion");
@@ -58,7 +54,6 @@ function ValidarFormulario(){
         MostrarAlerta("Campo Dirección Obligatorio")
         return false;
     }
-
     //Validar correo
     if (correo=="" || correo==null){
         CambiarColor("correo");
@@ -74,7 +69,6 @@ function ValidarFormulario(){
             return false;
         }
     }
-
     //Validar el Mensaje
     if (mensaje=="" || mensaje==null){
         CambiarColor("mensaje");
@@ -82,7 +76,6 @@ function ValidarFormulario(){
         MostrarAlerta("Campo Mensaje Obligatorio")
         return false;
     }
-
     if (fecha=="" || fecha==null){
         CambiarColor("fecha");
         //Mostramos mensaje de alerta
@@ -97,7 +90,6 @@ function ValidarFormulario(){
             return false;
         }
     }
-
     $('form').submit();
     return true;
 }
@@ -108,30 +100,26 @@ function ValidarFormulario(){
         ColorDefault('telefono');
         ColorDefault('direccion');
         ColorDefault('correo');
+        ColorDefault('mensaje');
+        ColorDefault('fecha')
     })
-
     $('textarea').focus(function (){
         $('.alert').remove();
         ColorDefault('mensaje');
     })
-
     //Creamos funcion de color por defecto a los bordes de los input
     function ColorDefault (dato){
         $('#' + dato).css({
             border: "1px solid #999"
         });
     }
-
     //Creamos función para cambiar color de borde de los input
     function CambiarColor (dato){
         $('#' + dato).css({
             border: "1px solid #dd5144"
         });
     }
-
     //Funcion para mostrar alerta
     function MostrarAlerta(texto){
         $('#nombre').before('<div class="alert">Error: '+ texto +'</div>');
     }
-
-
