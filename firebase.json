@@ -1,0 +1,58 @@
+{
+  "hosting": {
+
+    "public": "public", 
+
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+
+    "redirects": [ {
+      "source": "/foo",
+      "destination": "/bar",
+      "type": 301
+    }, {
+      "source": "/firebase/**",
+      "destination": "https://www.firebase.com",
+      "type": 302
+    } ],
+
+    "rewrites": [ {
+
+      "source": "/app/**",
+      "destination": "/app/index.html"
+    }, {
+      "source": "/promos/**",
+      "dynamicLinks": true
+    }, {
+      "source": "/bigben",
+      "function": "bigben"
+    } 
+    ],
+
+    "headers": [ {
+      "source": "**/*.@(eot|otf|ttf|ttc|css|js)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=2592000"
+      } ]
+    }, {
+      "source": "**/*.@(jpg|jpeg|gif|png|webp)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=2592000"
+      } ]
+    }, {
+      "source": "404.html",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=300"
+      } ]
+    } ]
+
+  
+
+  }
+}
